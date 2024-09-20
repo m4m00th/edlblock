@@ -6,7 +6,9 @@ La idea es simple, teniendo de fuente una lista dinámica externa de direcciones
     2.- MacOS vía bash (Próximamente).
     3.- Linux vía bash (Próximamente).
 
-**PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES**
+**PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES!!**
+
+**Esta es una idea básica para que abrir la mente**
 
 ## **Windows:**
 
@@ -34,7 +36,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe
         de la forma netsh advfirewall firewall del rule name=**"NOMBRE_POLITICA"** via powershell.
     3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con 
-        o que uno le defina. Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las 
+        lo que uno le defina. Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las 
         comunicaciones con este listado bajara la performance del equipo.
     4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
         específicas que puedan en el endpoint o red.
