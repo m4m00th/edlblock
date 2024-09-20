@@ -54,6 +54,29 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
         de Vicarius, etc. SE CREATIVO.!!!
 
+
+### Evidencias:
+
+#### Politica de Bloqueo OUT por IP
+
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP.png)
+
+
+#### Ambito Bloqueo OUT ANY por IP
+
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP_ambito.png)
+
+
+#### Politica de Bloqueo IN ANY
+
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all.png)
+
+
+#### Ambito Bloqueo IN ANY
+
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all_ambito.png)
+
+
 ### Próximos cambios y versiones:
 
     1.- Limitar regla de firewall a 500 ip por regla, creando múltiples reglas en caso de que el origen sea mayor a 500 
@@ -70,35 +93,20 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     6.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o 
         crearlas.
 
-### Evidenicas:
 
-#### Politica de Bloqueo OUT por IP
+## **MacOS: (PROXIMAMENTE)**
 
-![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP.png)
-
-
-2.- Ambito Bloqueo OUT ANY por IP
-
-![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP_ambito.png)
+### Funcionamiento:
+### Requisitos:
+### Recomendaciones:
+### Evidencias:
+### Próximos cambios y versiones:
 
 
-3.- Politica de Bloqueo IN ANY
+## **Linux: (PROXIMAMENTE)***
 
-![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all.png)
-
-
-4.- Ambito Bloqueo IN ANY
-
-![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all_ambito.png)
-
-
-
-## **MacOS:**
-
-    1.- Lanzamiento Proximamente
-
-
-
-## **Linux:**
-
-    1.- Lanzamiento Proximamente
+### Funcionamiento:
+### Requisitos:
+### Recomendaciones:
+### Evidencias:
+### Próximos cambios y versiones:
