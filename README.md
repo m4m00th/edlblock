@@ -28,12 +28,15 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     1.- Si el equipo Windows no forma de una red corporativa o doméstica en donde NO necesite publicar servicios
         (Ejemplo compartir archivos). Se recomienda Bloquear todas las conexiones entrantes (Que el origen sea externo) 
         y no solo la lista de orígenes maliciosos de la lista.
-    2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe de la forma 
-        netsh advfirewall firewall del rule name=**"NOMBRE_POLITICA"** via powershell.
-    3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con o que uno le defina.
-        Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las comunicaciones con este listado bajara la performance del equipo.
-    4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad específicas que puedan en el endpoint o red.
-    5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx de Vicarius, etc. SE CREATIVO.!!!
+    2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe
+        de la forma netsh advfirewall firewall del rule name=**"NOMBRE_POLITICA"** via powershell.
+    3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con 
+        o que uno le defina. Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las comunicaciones 
+        con este listado bajara la performance del equipo.
+    4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad específicas que 
+        puedan en el endpoint o red.
+    5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx de Vicarius, 
+        etc. SE CREATIVO.!!!
 
 ### Próximos cambios y versiones:
 
