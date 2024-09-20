@@ -2,7 +2,8 @@
 
 La idea es simple, teniendo de fuente una lista dinámica externa (pública o privada) de direcciones IP (EDL que este expuesta por https) estas se puedan bloquear directamente en un equipo endpoint:
 
-    1.- Windows vía netsh.exe (Proximamente subiré el archivo con comandos nativos en PS).
+    1.- Windows vía netsh.exe (Proximamente subiré versión con comandos nativos en PS para la 
+        AMB de las políticas).
 
     2.- MacOS vía bash (Próximamente).
 
