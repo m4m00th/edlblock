@@ -2,7 +2,7 @@
 
 La idea es simple, teniendo de fuente una lista dinámica externa (pública o privada) de direcciones IP (EDL que este expuesta por https) estas se puedan bloquear directamente en un equipo endpoint:
 
-    1.- Windows vía powershell.
+    1.- Windows vía netsh.exe (Proximamente subiré el archivo con comandos nativos en PS).
 
     2.- MacOS vía bash (Próximamente).
 
@@ -10,23 +10,24 @@ La idea es simple, teniendo de fuente una lista dinámica externa (pública o pr
 
 ## Descargo de Responsabilidad
 
-**PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES!!**
+**PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOY RESPONSABLE!!**
 
-**APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente, nos demoramos más en crear el README que el script.**
+**APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente, me demoré más en crear el README que el script.**
 
 ## **Windows:**
 
 ### Ejecución:
 
-En un equipo windows, una ventana Powershell en modo administrador ejecuta el archivo edlbockW.ps1.
+    1.- Baja el script edlbockW.ps1 al equipo Windows.
+    2.- En una ventana Powershell en modo administrador ejecuta el archivo edlbockW.ps1.
 
 ### Funcionamiento:
 
-A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/blockrules/compromised-ips.txt
+A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockrules/compromised-ips.txt
 
     1.- Acceder a la lista.
 
-    2.- Trabajar el archivo vía Powershell.
+    2.- Trabajar el archivo vía Powershell, para dejarlo en formato admisible por netsh.exe.
 
     3.- Crear política de firewall Windows vía netsh.exe, que bloque conexiones salientes hacia las IP de la lista.
 
@@ -41,7 +42,8 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecución a netsh.exe 
 
     3.- La cuenta de usuario que ejecute el script en powershell debe tener permisos escritura en la 
-        ruta C:\Windows\Temp\. (Para que se entienda facilmente el script creamos archivos de paso).
+        ruta C:\Windows\Temp\. (Para que se entienda facilmente el script creé archivos de paso). Solo
+        comenta las lineas que borra los archivos y podrás ver el resultado de cada paso.
 
     4.- Debe funcionar correctamente el Firewall de Windows.
 
@@ -102,7 +104,8 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
     6.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o 
         crearlas.
-
+    7.- Reemplazar netsh.exe por instrucciones nativas en PS, una vez analicé la diferencias entre las versiones
+        de PS y Firewall de Windows.
 
 ## **MacOS: (Proximamente)**
 
