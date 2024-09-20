@@ -80,7 +80,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 ![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP.png)
 
 
-#### Ambito Bloqueo OUT ANY por IP
+#### Ambito Bloqueo OUT por IP
 
 ![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP_ambito.png)
 
