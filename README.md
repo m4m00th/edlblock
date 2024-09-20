@@ -10,7 +10,7 @@ La idea es simple, teniendo de fuente una lista dinámica externa de direcciones
 
 **PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES!!**
 
-**Esta es una idea básica para abrir la mente**
+**APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente**
 
 ## **Windows:**
 
