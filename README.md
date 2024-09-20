@@ -8,11 +8,17 @@ La idea es simple, teniendo de fuente una lista dinámica externa (pública o pr
 
     3.- Linux vía bash (Próximamente).
 
+## Descargo de Responsabilidad
+
 **PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES!!**
 
 **APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente, nos demoramos más en crear el README que el script.**
 
 ## **Windows:**
+
+### Ejecución:
+
+En un equipo windows, una ventana Powershell en modo administrador ejecuta el archivo edlbockW.ps1.
 
 ### Funcionamiento:
 
@@ -100,6 +106,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
 ## **MacOS: (Proximamente)**
 
+### Ejecución:
 ### Funcionamiento:
 ### Requisitos:
 ### Recomendaciones:
@@ -109,6 +116,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
 ## **Linux: (Proximamente)**
 
+### Ejecución:
 ### Funcionamiento:
 ### Requisitos:
 ### Recomendaciones:
