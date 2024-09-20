@@ -47,8 +47,15 @@ Linux:
 
 Evidenicas
 
-Politica de Bloqueo IN ANY
+1.-
+
+2.-
+
+3.- Politica de Bloqueo IN ANY
 
 ![m4m00th/edlblock/images/WinFW_Block_IN_all.png][def]
 
 [def]: https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all.png
+
+4.- Ambito Bloqueo IN ANY
+
