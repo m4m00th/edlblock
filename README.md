@@ -68,6 +68,8 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
     5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
         de Vicarius, etc. SE CREATIVO.!!!
+    
+    6.- ¿Y si creas un tarea programada que ejecute el script periodicamente?.
 
 
 ### Evidencias:
