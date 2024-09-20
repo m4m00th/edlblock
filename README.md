@@ -60,6 +60,8 @@ Evidenicas
 4.- Ambito Bloqueo IN ANY
 
 
-**![m4m00th/edlblock/images/WinFW_Block_IN_all_ambito.png][def]
-**
+[m4m00th/edlblock/images/WinFW_Block_IN_all_ambito.png][def]
 [def]: https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all_ambito.png
+
+![images/WinFW_Block_IN_all_ambito.png]
+
