@@ -19,13 +19,14 @@ La idea es simple, teniendo de fuente una lista dinámica externa (pública o pr
 ### Ejecución:
 
     1.- Baja el script edlbockW.ps1 al equipo Windows.
+
     2.- En una ventana Powershell en modo administrador ejecuta el archivo edlbockW.ps1.
 
 ### Funcionamiento:
 
 A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockrules/compromised-ips.txt
 
-    1.- Acceder a la lista.
+    1.- Acceder a la lista publiacada en internet.
 
     2.- Trabajar el archivo vía Powershell, para dejarlo en formato admisible por netsh.exe.
 
@@ -46,6 +47,8 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
         comenta las lineas que borra los archivos y podrás ver el resultado de cada paso.
 
     4.- Debe funcionar correctamente el Firewall de Windows.
+
+    5.- Debe estar habilitada la posibilidad de ejecutar script en Powershell.
 
 ### Recomendaciones:
 
