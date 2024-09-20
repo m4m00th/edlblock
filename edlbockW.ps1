@@ -1,4 +1,6 @@
 # TODO SE PUEDE OPTIMIZAR LO MOSTRAMOS PASO A PASO PARA QUE CUALQUIERA LO LOGRE ENTENDER
+# Incluso creamos archivos de paso
+
 # Dirección de la lista a utilizar
 $url = "https://rules.emergingthreats.net/blockrules/compromised-ips.txt"
 

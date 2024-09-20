@@ -6,6 +6,8 @@ La idea es simple, teniendo de fuente una lista dinámica externa de direcciones
     2.- MacOS vía bash (Próximamente).
     3.- Linux vía bash (Próximamente).
 
+**PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES**
+
 ## **Windows:**
 
 ### Funcionamiento:
@@ -21,7 +23,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
     2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecución a netsh.exe 
     3.- La cuenta de usuario que ejecute el script en powershell debe tener permisos escritura en la 
-        ruta C:\Windows\Temp\. (Para que se entienda facilemnte el script creamos archivos de paso).
+        ruta C:\Windows\Temp\. (Para que se entienda facilmente el script creamos archivos de paso).
     4.- Debe funcionar correctamente el Firewall de Windows.
 
 ### Recomendaciones:
