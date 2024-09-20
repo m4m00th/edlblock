@@ -94,7 +94,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
         crearlas.
 
 
-## **MacOS: (PROXIMAMENTE)**
+## **MacOS: (Proximamente)**
 
 ### Funcionamiento:
 ### Requisitos:
@@ -103,7 +103,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 ### Próximos cambios y versiones:
 
 
-## **Linux: (PROXIMAMENTE)***
+## **Linux: (Proximamente)**
 
 ### Funcionamiento:
 ### Requisitos:
