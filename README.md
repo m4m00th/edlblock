@@ -24,7 +24,8 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
     3.- Crear política de firewall Windows vía netsh.exe, que bloque conexiones salientes hacia las IP de la lista.
 
-    4.- Crear política de firewall Windows vía netsh.exe, que bloque todas las conexiones entrantes. Puedes cometar esta linea y descometar la que bloquea solo las IP de la lista.
+    4.- Crear política de firewall Windows vía netsh.exe, que bloque todas las conexiones entrantes. Puedes cometar 
+        esta linea y descometar la que bloquea solo las IP de la lista.
 
 
 ### Requisitos:
@@ -45,7 +46,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
         de orígenes maliciosos de la lista. "Si NO publicas servicios BLOQUEA la entrada".
 
     2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe
-        de la forma "netsh advfirewall firewall del rule name=NOMBRE_POLITICA" vía powershell.
+        de la forma `netsh advfirewall firewall del rule name=NOMBRE_POLITICA` vía powershell.
 
     3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar las direcciones IP el origen y/o 
         destino con las direcciones IP que uno le defina. Por lo cual es poco recomendable poner miles de IP, 
