@@ -19,8 +19,8 @@ A modo de ejemplo usararemos la lista libre https://rules.emergingthreats.net/bl
 Requistos:
 
     1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
-    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecucion a netsh.exe.
-        y de escritura en la ruta C:\Windows\Temp\.
+    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecucion a netsh.exe y de 
+        escritura en la ruta C:\Windows\Temp\.
     3.- Deebe funcionar correctamente el Firewall de Windows.
 
 Recomendaciones.
