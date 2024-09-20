@@ -33,10 +33,10 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con 
         o que uno le defina. Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las 
         comunicaciones con este listado bajara la performance del equipo.
-    4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad específicas 
-        que puedan en el endpoint o red.
-    5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx de Vicarius, 
-        etc. SE CREATIVO.!!!
+    4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
+        específicas que puedan en el endpoint o red.
+    5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
+        de Vicarius, etc. SE CREATIVO.!!!
 
 ### Próximos cambios y versiones:
 
