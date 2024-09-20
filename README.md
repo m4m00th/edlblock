@@ -1,6 +1,6 @@
 # edlblock
 
-La idea es simple, teniendo de fuente una lista dinámica externa de direcciones IP (EDL) publica o privada (en este caso se necesitaría claves de logueo) que este expuesta por http(s) estas se puedan bloquear directamente en un equipo endpoint:
+La idea es simple, teniendo de fuente una lista dinámica externa de direcciones IP (EDL que este expuesta por http(s)) publica o privada (en este caso se necesitaría claves de logueo) estas se puedan bloquear directamente en un equipo endpoint:
 
     1.- Windows vía powershell.
     2.- MacOS vía bash (Próximamente).

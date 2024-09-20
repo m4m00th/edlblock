@@ -1,3 +1,4 @@
+# TODO SE PUEDE OPTIMIZAR LO MOSTRAMOS PASO A PASO PARA QUE CUALQUIERA LO LOGRE ENTENDER
 # Dirección de la lista a utilizar
 $url = "https://rules.emergingthreats.net/blockrules/compromised-ips.txt"
 
@@ -54,4 +55,3 @@ netsh advfirewall firewall add rule name="01-RuleInBlockAny" dir=in interface=an
 
 # Borrando archivo final
 Remove-Item $archivoFinal
-
