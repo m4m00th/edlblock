@@ -19,6 +19,7 @@ Requistos:
 
     1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt
     2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecucion a netsh.exe y de escritura en la ruta C:\Windows\Temp\
+    3.- Obvio que debe funcionar el Firewall de Windows 
 
 Recomendaciones.
 
@@ -28,12 +29,18 @@ Se recomienda Bloquear todas las conexiones entrantes (Que el origen sea externo
 Proximas cambios y versiones:
 
 Windows:
+
     1.- Limitar regla de firewall a 500 ip por regla, creando multiples reglas en caso de que el origen sea mayor a 500 direcciones.
     2.- Integracion con EDLManager para trabajo de multiples origenes y exposicion en una sola fuente.
     3.- Manejo de errores.
+    4.- Creacion de archivo de log.
+    5.- Creacion de funcion para revisar si existen los archivos antes de elimianrlos y/o crearlos.
+    5.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o crearlas.
 
 MacOS:
+
     1.- Lanzamiento Proximamente
 
-Linux
+Linux:
+
     1.- Lanzamiento Proximamente
