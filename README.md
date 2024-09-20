@@ -19,15 +19,16 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 ### Requisitos:
 
     1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
-    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecución a netsh.exe y de 
-        escritura en la ruta C:\Windows\Temp\.
-    3.- Debe funcionar correctamente el Firewall de Windows.
+    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecución a netsh.exe 
+    3.- La cuenta de usuario que ejecute el script en powershell debe tener permisos escritura en la 
+        ruta C:\Windows\Temp\. (Para que se entienda facilemnte el script creamos archivos de paso).
+    4.- Debe funcionar correctamente el Firewall de Windows.
 
 ### Recomendaciones:
 
     1.- Si el equipo Windows no forma de una red corporativa o doméstica en donde NO necesite publicar servicios
-        (Ejemplo compartir archivos). Se recomienda Bloquear todas las conexiones entrantes (Que el origen sea externo) 
-        y no solo la lista de orígenes maliciosos de la lista.
+        (Ejemplo compartir archivos). Se recomienda BLOQUEAR todas las conexiones entrantes y no solo la lista
+        de orígenes maliciosos de la lista. "Si NO publicas servicios BLOQUEA la entrada".
     2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe
         de la forma netsh advfirewall firewall del rule name=**"NOMBRE_POLITICA"** via powershell.
     3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con 
