@@ -35,7 +35,7 @@ Windows:
     3.- Manejo de errores.
     4.- Creacion de archivo de log.
     5.- Creacion de funcion para revisar si existen los archivos antes de elimianrlos y/o crearlos.
-    5.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o crearlas.
+    6.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o crearlas.
 
 MacOS:
 
@@ -44,3 +44,9 @@ MacOS:
 Linux:
 
     1.- Lanzamiento Proximamente
+
+Evidenicas
+
+Politica de Bloqueo IN ANY
+
+m4m00th/edlblock/images/WinFW_Block_IN_all.png

@@ -10,16 +10,16 @@ $archivoEntrada= "C:\Windows\Temp\iocipv4_temp01"
 $archivoSalida = "C:\Windows\Temp\iocipv4_temp02"
 $archivoFinal = "C:\Windows\Temp\iocipv4.txt"
 
-# Create a WebClient
+# Creando el cliente web
 $webclient = New-Object System.Net.WebClient
 
 # Basic authentication encoding.
 # $basic = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($user + ":" + $password));
 
-# Set Authorization HTTP header with Basic authentication information.
+# Seteo de información Authorization HTTP header con Basic authentication.
 # $webclient.Headers["Authorization"] = "Basic $basic"
 
-# Export the contents to file.
+# Exportar el contenido a un archivo temporal.
 $webclient.DownloadFile($url, $archivoEntrada)
 
 # Lee todas las líneas del archivo original
@@ -33,7 +33,7 @@ Set-Content $archivoSalida -Value $lineaUnica
 # Borrando caracteres en Blanco en caso de que existan
 (Get-Content -Path $archivoSalida) -replace '\s+', '' | Set-Content -Path $archivoFinal
 
-# Borrando Archvi temporal
+# Borrando archivos temporales
 Remove-Item $archivoEntrada
 Remove-Item $archivoSalida
 
