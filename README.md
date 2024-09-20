@@ -60,7 +60,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
         direcciones.
 
     2.- Integracion con EDLManager para trabajo de multiples origenes y exposicion en una sola fuente.
-    
+
     3.- Manejo de errores.
 
     4.- Creacion de archivo de log.
@@ -70,9 +70,9 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
     6.- Creacion de funcion para revisar si existen las reglas en el firewall de windows antes de eliminarlas y/o 
         crearlas.
 
-Evidenicas:
+### Evidenicas:
 
-1.- Politica de Bloqueo OUT por IP
+#### Politica de Bloqueo OUT por IP
 
 ![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP.png)
 
