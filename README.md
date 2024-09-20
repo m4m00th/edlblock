@@ -1,8 +1,12 @@
 # edlblock
 
-La idea es simple, teniendo de fuente una lista dinamica externa de direciones IP (EDL) 
-publica o privada (en este caso se necesitaria claves de logueo) se puedan bloquear en 
-un equipo endpoint Windows (Proximamente MacOS y Linux)
+La idea es simple, teniendo de fuente una lista dinamica externa de direcciones IP (EDL) 
+publica o privada (en este caso se necesitaria claves de logueo) que este expuesta por http(s)
+estas se puedan bloquear en un equipo endpoint:
+
+1.- Windows vía powershell.
+2.- MacOS vía bash (Proximamente).
+3.- Linux vía bash (Proximamente).
 
 El proceso sera:
 
@@ -47,9 +51,15 @@ Linux:
 
 Evidenicas:
 
-1.-
+1.- Politica de Bloqueo OUT por IP
 
-2.-
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP.png)
+
+
+2.- Ambito Bloqueo OUT ANY por IP
+
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_OUT_IP_ambito.png)
+
 
 3.- Politica de Bloqueo IN ANY
 
