@@ -62,3 +62,4 @@ Evidenicas
 
 ![images/WinFW_Block_IN_all_ambito.png][def]
 
+[def]: https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all_ambito.png
