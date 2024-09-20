@@ -1,8 +1,6 @@
 # edlblock
 
-La idea es simple, teniendo de fuente una lista dinamica externa de direcciones IP (EDL) 
-publica o privada (en este caso se necesitaria claves de logueo) que este expuesta por http(s)
-estas se puedan bloquear en un equipo endpoint:
+La idea es simple, teniendo de fuente una lista dinamica externa de direcciones IP (EDL) publica o privada (en este caso se necesitaria claves de logueo) que este expuesta por http(s) estas se puedan bloquear en un equipo endpoint:
 
     1.- Windows vía powershell.
     2.- MacOS vía bash (Proximamente).
@@ -16,14 +14,14 @@ El proceso sera:
     2.- Trabajar el archivo via Powershell.
     3.- Bloquer en firewall de Windows equipo via netsh.exe
 
-A modo de ejemplo usararemos la lista libre
-https://rules.emergingthreats.net/blockrules/compromised-ips.txt
+A modo de ejemplo usararemos la lista libre https://rules.emergingthreats.net/blockrules/compromised-ips.txt
 
 Requistos:
 
-    1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt
-    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecucion a netsh.exe y de escritura en la ruta C:\Windows\Temp\
-    3.- Obvio que debe funcionar el Firewall de Windows 
+    1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
+    2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecucion a netsh.exe.
+        y de escritura en la ruta C:\Windows\Temp\.
+    3.- Deebe funcionar correctamente el Firewall de Windows.
 
 Recomendaciones.
 
