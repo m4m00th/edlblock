@@ -34,10 +34,10 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
         (Ejemplo compartir archivos). Se recomienda BLOQUEAR todas las conexiones entrantes y no solo la lista
         de orígenes maliciosos de la lista. "Si NO publicas servicios BLOQUEA la entrada".
     2.- Siempre se puede borrar la política de forma manual a través de la aplicación Windows Firewall o vía netsh.exe
-        de la forma netsh advfirewall firewall del rule name=**"NOMBRE_POLITICA"** via powershell.
-    3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar el origen y/o destino del tráfico con 
-        lo que uno le defina. Por lo cual es poco recomendable poner miles de IP, dado que al comparar todas las 
-        comunicaciones con este listado bajara la performance del equipo.
+        de la forma **"netsh advfirewall firewall del rule name=NOMBRE_POLITICA"** via powershell.
+    3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar las direcciones IP el origen y/o 
+        destino con las direcciones IP que uno le defina. Por lo cual es poco recomendable poner miles de IP, 
+        dado que al comparar todas las comunicaciones con este listado bajara la performance del equipo.
     4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
         específicas que puedan en el endpoint o red.
     5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
