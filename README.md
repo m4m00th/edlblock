@@ -53,17 +53,11 @@ Evidenicas:
 
 3.- Politica de Bloqueo IN ANY
 
-[def]: images/WinFW_Block_IN_all.png
-
-![m4m00th/edlblock/images/WinFW_Block_IN_all.png][def]
-
+![images/WinFW_Block_IN_all.png
+](https://)
 
 
 4.- Ambito Bloqueo IN ANY
-
-[def]: images/WinFW_Block_IN_all_ambito.png
-
-![images/WinFW_Block_IN_all_ambito.png][def]
 
 
 
