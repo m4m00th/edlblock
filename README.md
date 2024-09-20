@@ -45,7 +45,7 @@ Linux:
 
     1.- Lanzamiento Proximamente
 
-Evidenicas
+Evidenicas:
 
 1.-
 
