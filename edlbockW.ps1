@@ -57,3 +57,5 @@ netsh advfirewall firewall add rule name="01-RuleInBlockAny" dir=in interface=an
 
 # Borrando archivo final
 Remove-Item $archivoFinal
+
+# Nos vemos
