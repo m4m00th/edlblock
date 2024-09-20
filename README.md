@@ -1,6 +1,6 @@
 # edlblock
 
-La idea es simple, teniendo de fuente una lista dinámica externa de direcciones IP (EDL que este expuesta por http(s)) publica o privada (en este caso se necesitaría claves de logueo) estas se puedan bloquear directamente en un equipo endpoint:
+La idea es simple, teniendo de fuente una lista dinámica externa (pública o privada) de direcciones IP (EDL que este expuesta por https) estas se puedan bloquear directamente en un equipo endpoint:
 
     1.- Windows vía powershell.
 
@@ -10,7 +10,7 @@ La idea es simple, teniendo de fuente una lista dinámica externa de direcciones
 
 **PRUEBALO ANTES!! NO SEAS ANIMAL!!! REVISA COMO FUNCIONA!!! SI BLOQUEAS LA COMUNICACION DEL EQUIPO NO SOMOS RESPONSABLES!!**
 
-**APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente**
+**APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente, nos demoramos más en crear el README que el script.**
 
 ## **Windows:**
 
@@ -22,7 +22,10 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
     2.- Trabajar el archivo vía Powershell.
 
-    3.- Bloquer en firewall de Windows equipo vía netsh.exe
+    3.- Crear política de firewall Windows vía netsh.exe, que bloque conexiones salientes hacia las IP de la lista.
+
+    4.- Crear política de firewall Windows vía netsh.exe, que bloque todas las conexiones entrantes. Puedes cometar esta linea y descometar la que bloquea solo las IP de la lista.
+
 
 ### Requisitos:
 
@@ -49,7 +52,7 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
         dado que al comparar todas las comunicaciones con este listado bajara la performance del equipo.
 
     4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
-        específicas que puedan en el endpoint o red.
+        específicas que puedas y debas tener en el endpoint o la red.
 
     5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
         de Vicarius, etc. SE CREATIVO.!!!
@@ -79,8 +82,8 @@ A modo de ejemplo usuraremos la lista libre https://rules.emergingthreats.net/bl
 
 ### Próximos cambios y versiones:
 
-    1.- Limitar regla de firewall a 500 ip por regla, creando múltiples reglas en caso de que el origen sea mayor a 500 
-        direcciones.
+    1.- Limitar regla de firewall a 500 ip por regla, creando múltiples reglas en caso que la lista sea mayor a 500 
+        direcciones IP.
 
     2.- Integracion con EDLManager para trabajo de multiples origenes y exposicion en una sola fuente.
 
