@@ -58,5 +58,5 @@ Evidenicas:
 
 4.- Ambito Bloqueo IN ANY
 
-
+![alt text](https://github.com/m4m00th/edlblock/blob/main/images/WinFW_Block_IN_all_ambito.png)
 
