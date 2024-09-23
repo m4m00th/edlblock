@@ -39,7 +39,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
 ### Requisitos:
 
-    1.- El equipo Windows debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
+    1.- El equipo Windows debe contar con acceso a la lista.
 
     2.- La cuenta de usuario que ejecute el script en powershell debe tener permisos de ejecución a netsh.exe 
 
@@ -140,7 +140,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
 ### Requisitos:
 
-    1.- El equipo Mac debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
+    1.- El equipo Mac debe contar con acceso a la lista.
 
     2.- Se debe tener cuenta sudo para ejecución. 
 
@@ -165,9 +165,6 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
     5.- También puedes usar agentes que permitan ejecución de script ej: ossec, vRx de Vicarius, etc.
     
     6.- Claro que se puede automatizar la tarea.
-
-
-### Próximos cambios y versiones:
 
 
 ## **Linux: (Proximamente)**
