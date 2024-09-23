@@ -2,7 +2,7 @@
 
 La idea es simple, teniendo de fuente una lista dinámica externa (pública o privada) de direcciones IP (EDL que este expuesta por https) estas se puedan bloquear directamente en un equipo endpoint:
 
-    1.- Windows vía netsh.exe (Proximamente subiré versión con comandos nativos en PS para la 
+    1.- Windows vía netsh.exe (Preliminar. Proximamente subiré versión con comandos nativos en PS para la 
         AMB de las políticas).
 
     2.- MacOS vía bash (Preliminar).
@@ -15,7 +15,7 @@ La idea es simple, teniendo de fuente una lista dinámica externa (pública o pr
 
 **APORTA, NO JODAS, Recuerda que es una idea MUY BASICA mostrando paso a paso para que puedas abrir la mente, me demoré más en crear el README que el script.**
 
-## **Windows:**
+## **Windows: (Preliminar)**
 
 ### Ejecución:
 
@@ -113,7 +113,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
     7.- Reemplazar netsh.exe por instrucciones nativas en PS, una vez analicé la diferencias entre las versiones
         de PS y Firewall de Windows.
 
-## **MacOS: (Proximamente)**
+## **MacOS: (Preliminar)**
 
 ### Ejecución:
 
@@ -169,7 +169,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
 ### Evidencias:
 
-    
+
 ### Próximos cambios y versiones:
 
 
