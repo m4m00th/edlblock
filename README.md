@@ -5,7 +5,7 @@ La idea es simple, teniendo de fuente una lista dinámica externa (pública o pr
     1.- Windows vía netsh.exe (Proximamente subiré versión con comandos nativos en PS para la 
         AMB de las políticas).
 
-    2.- MacOS vía bash (Próximamente).
+    2.- MacOS vía bash (Preliminar).
 
     3.- Linux vía bash (Próximamente).
 
@@ -33,8 +33,8 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
     3.- Crear política de firewall Windows vía netsh.exe, que bloque conexiones salientes hacia las IP de la lista.
 
-    4.- Crear política de firewall Windows vía netsh.exe, que bloque todas las conexiones entrantes. Puedes cometar 
-        esta linea y descometar la que bloquea solo las IP de la lista.
+    4.- Crear política de firewall Windows vía netsh.exe, que bloque todas las conexiones entrantes. Puedes comentar 
+        esta linea y descomentar la que bloquea solo las IP de la lista.
 
 
 ### Requisitos:
@@ -67,7 +67,7 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
     4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
         específicas que puedas y debas tener en el endpoint o la red.
 
-    5.- Se puede automatizar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
+    5.- Se puede ejecutar vía PS remoto, GPO de AD, agentes que permitan ejecución de script ej: ossec, vRx 
         de Vicarius, etc. SE CREATIVO.!!!
     
     6.- ¿Y si creas un tarea programada que ejecute el script periodicamente?.
@@ -119,15 +119,57 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 
     1.- Baja el script edlbockM.sh al equipo MAC.
 
-    2.- En una ventana terminal asigna permisos de ejecucion **chmod +x edlbockM.sh**.
+    2.- En una ventana terminal asigna permisos de ejecucion chmod +x edlbockM.sh.
 
-    3.- Ejecuta de la forma sudo **./edlbockM.sh**.
+    3.- Ejecuta de la forma sudo ./edlbockM.sh.
+
+
+### Funcionamiento:
+
+A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockrules/compromised-ips.txt
+
+    1.- Se baja la lista publicada en internet a un archivo local.
+
+    2.- Se respalda archivo /etc/pf.conf en /etc/pf.conf.bak.
+
+    3.- Se crea nuevo archivo /etc/pf.conf.
+
+    4.- Se recarga la configuración y se habilita pf. 
+
+    5.- Se eliminan los archivos temporales.
+
+### Requisitos:
+
+    1.- El equipo Mac debe contar con acceso a https://rules.emergingthreats.net/blockrules/compromised-ips.txt.
+
+    2.- Se debe tener cuenta sudo para ejecución. 
+
+
+### Recomendaciones:
+
+    1.- Si el equipo Mac no forma de una red corporativa o doméstica en donde NO necesite publicar servicios
+        (Ejemplo compartir archivos). Se recomienda BLOQUEAR todas las conexiones entrantes y no solo la lista
+        de orígenes maliciosos de la lista. "Si NO publicas servicios BLOQUEA la entrada".
+
+    2.- Si bien se crea un respaldo de la configuración actual en el script, esta se va a reemplazar cada
+        vez que se ejecuta el script. Por lo cual antes de ejecutar la primera vez se recomienda hacer un
+        respaldo del archivo original de la siguiente forma sudo cp /etc/pf.conf /etc/pf.conf.original
+
+    3.- Hay que entender que el funcionamiento de un firewall IP es poder comparar las direcciones IP el origen y/o 
+        destino con las direcciones IP que uno le defina. Por lo cual es poco recomendable poner miles de IP, 
+        dado que al comparar todas las comunicaciones con este listado bajara la performance del equipo.
+
+    4.- La idea es poder tener una vía más de contención de emergencia y no reemplazar soluciones de seguridad 
+        específicas que puedas y debas tener en el endpoint o la red.
+
+    5.- También puedes usar agentes que permitan ejecución de script ej: ossec, vRx de Vicarius, etc.
+    
+    6.- Claro que se puede automatizar la tarea.
+
+
+### Evidencias:
 
     
-### Funcionamiento:
-### Requisitos:
-### Recomendaciones:
-### Evidencias:
 ### Próximos cambios y versiones:
 
 
