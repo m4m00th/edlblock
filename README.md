@@ -167,9 +167,6 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
     6.- Claro que se puede automatizar la tarea.
 
 
-### Evidencias:
-
-
 ### Próximos cambios y versiones:
 
 
