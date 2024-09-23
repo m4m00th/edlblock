@@ -116,6 +116,14 @@ A modo de ejemplo usaré la lista libre https://rules.emergingthreats.net/blockr
 ## **MacOS: (Proximamente)**
 
 ### Ejecución:
+
+    1.- Baja el script edlbockM.sh al equipo MAC.
+
+    2.- En una ventana terminal asigna permisos de ejecucion **chmod +x edlbockM.sh**.
+
+    3.- Ejecuta de la forma sudo **./edlbockM.sh**.
+
+    
 ### Funcionamiento:
 ### Requisitos:
 ### Recomendaciones:
